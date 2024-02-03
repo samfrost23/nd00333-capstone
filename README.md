@@ -1,8 +1,10 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
+# Azure Nanodegree Capstone Project: Breast Cancer Prediction
 
-# Your Project Title Here
+This project is part of the Udacity Azure ML Nanodegree. In this project, I have used https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset Breast Cancer dataset.
 
-*TODO:* Write a short introduction to your project.
+The objective is to train a machine learning model using Hyperdrive and AutoML and predict mortality caused by heart failure. Models from these two experiments are compared using Accuracy score, best model is registered and deployed to Azure Container Service as a REST endpoint with key based authentication.
+https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset
+
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
@@ -10,7 +12,7 @@
 ## Dataset
 https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset
 ### Overview
-*TODO*: Explain about the data you are using and where you got it from.
+The dataset contains detials of 299 patients - 105 women and 194 men - there are 13 features, which report clinical, body, and lifestyle information
 
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
