@@ -1,24 +1,21 @@
 # Azure Nanodegree Capstone Project: Breast Cancer Prediction
 
-This project is part of the Udacity Azure ML Nanodegree. In this project, I have used https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset Breast Cancer dataset.
+My capstone project for the Udacity Azure ML Nanodegree is to try to predict either a Mallign or a B result.
 
-The objective is to train a machine learning model using Hyperdrive and AutoML and predict mortality caused by heart failure. Models from these two experiments are compared using Accuracy score, best model is registered and deployed to Azure Container Service as a REST endpoint with key based authentication.
-https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset
-
-
-## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
+The objective is to train a machine learning model using Hyperdrive and AutoML and compare the results. Models from these two experiments are compared using Accuracy score, the best model is registered and deployed to Azure Container Service as a REST endpoint with key based authentication.
 
 ## Dataset
-https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset
+
 ### Overview
-The dataset contains detials of 299 patients - 105 women and 194 men - there are 13 features, which report clinical, body, and lifestyle information
+The dataset used in this project is available from Kaggle 
+https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset
+contains detials of 299 patients - 105 women and 194 men - there are 13 features, which report clinical, body, and lifestyle information
 
 ### Task
-*TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
+The object of this project is to classify samples as either Malignant (M) or Benign (B).
 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
+The compressed dataset is available to download in Kaggle and i was able to add to my Github so that i can register it as a dataset in my Azure workspace in the Azure ML Studio GUI.
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
