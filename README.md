@@ -48,7 +48,10 @@ The main challenge for detection is classifying tumors into malignant (cancerous
 The compressed dataset is available to download in Kaggle and i was able to add to my Github so that i can register it as a dataset in my Azure workspace in the Azure ML Studio GUI.
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+For the automated ML run, I setup the following:
+
+
+Limiting the experiment to a total duration of 1 hr to reduce the potential for session timeout. The primary metric that I used as an objective for the autoML run was weighted AUC, which is the area under the curve and i is the suggested metric for anomaly detection in the Azure documentation. 
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
