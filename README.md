@@ -167,17 +167,40 @@ Here are the models trained by Automated ML:
 
 The best results were:
 
+![hyperdrive status](https://github.com/samfrost23/nd00333-capstone/assets/99268262/9030c98b-55ec-4756-95c0-e66ce34f1bb0)
+
+![hyperdrive metrics](https://github.com/samfrost23/nd00333-capstone/assets/99268262/2d02b9e3-86ec-42ca-87c3-7341b0047d79)
+
 details of some of the metrics of the best model:
+
+![hyperdrive child runs](https://github.com/samfrost23/nd00333-capstone/assets/99268262/257b1669-2a6e-4209-b40a-3ef5b29dbb94)
 
 
 I ran the RunDetails widget to follow the progress
 
+![hyperdrive widget1](https://github.com/samfrost23/nd00333-capstone/assets/99268262/6f68b56a-c1af-4c4f-88c3-2a1e1282b590)
+
+![hyperdrive widget2](https://github.com/samfrost23/nd00333-capstone/assets/99268262/309d1fab-4458-42b3-8e14-60e31ccb523f)
+
+![hyperdrive widget3](https://github.com/samfrost23/nd00333-capstone/assets/99268262/0f6285ba-5fb6-4f3f-bbdc-9ee388a33eae)
+
 
 The metrics can be shown using get_metrics() 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+
+![hyperdrive metrics](https://github.com/samfrost23/nd00333-capstone/assets/99268262/d2f2f6b3-79cd-46c8-a920-2b1bd856f73b)
+
+![hyperdrivemodel](https://github.com/samfrost23/nd00333-capstone/assets/99268262/7631ebd5-eda2-444b-aefc-68b173e05cb0)
+
+![hyperdrivegetbestmodel](https://github.com/samfrost23/nd00333-capstone/assets/99268262/f47808ce-1362-470b-8f28-023fc79ad521)
+
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+Below are the endpoints created for both AutoML and Hyperdrive
+
+![endpoints](https://github.com/samfrost23/nd00333-capstone/assets/99268262/9ecc58ed-42e4-457b-8c55-538fb52693cc)
+
+
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
@@ -186,4 +209,19 @@ The metrics can be shown using get_metrics()
 - Demo of a sample request sent to the endpoint and its response
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+ONNX:
+I enabled ONNX compatibility:
+
+![onnx1](https://github.com/samfrost23/nd00333-capstone/assets/99268262/3e94a4ee-9447-4721-a569-431c3d117ad0)
+
+Converted to ONNYX:
+![onnx2](https://github.com/samfrost23/nd00333-capstone/assets/99268262/0ae9b7b4-d516-4c7a-889b-a0304e14d5e1)
+
+
+Enabled Application Logs:
+I enabled application insights
+![automl app insights](https://github.com/samfrost23/nd00333-capstone/assets/99268262/a00c755a-3b20-4f5f-b65a-bef69621aa7c)
+
+![automl app insights2](https://github.com/samfrost23/nd00333-capstone/assets/99268262/4261af9b-538d-467a-8f3f-e5c1240d5204)
+
+![automl app insights3](https://github.com/samfrost23/nd00333-capstone/assets/99268262/f34b16c7-2f1c-443f-b219-b8c02ae57b27)
