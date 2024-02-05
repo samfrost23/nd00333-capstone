@@ -51,7 +51,7 @@ The compressed dataset is available to download in Kaggle and i was able to add 
 For the automated ML run, I setup the following:
 
 
-Limiting the experiment to a total duration of 1 hr to reduce the potential for session timeout. The primary metric that I used as an objective for the autoML run was weighted AUC, which is the area under the curve and it is the suggested metric for anomaly detection in the Azure documentation. 
+As the target problem is to predict a diagnosis in the form of an M or a B this is a binary prediction and so the task type should be classification on the Diagnosis label. Limiting the experiment to a total duration of 1 hr to reduce the potential for session timeout. The primary metric that I used as an objective for the autoML run was weighted AUC, which is the area under the curve and it is the suggested metric for anomaly detection in the Azure documentation. 
 
 AutoML Settings:
 experiment_timeout_minutes - This defines how long experement will run in mins
@@ -60,7 +60,7 @@ n_cross_validations - Number of cross validations to perform
 primary_metric - The metric that Automated Machine Learning will optimize for model selection
 
 AutoML Config:
-I have set the following for the AUtoML Config
+I have set the following for the AutoML Config
 enable_early_stopping - Early termination if the score is not improving in the short term
 enable_onnx_compatible_models - to enable Onnx-compatitble models
 label_column_name - The column that will be predicted
@@ -68,16 +68,57 @@ label_column_name - The column that will be predicted
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
+Here are the models trained by Automated ML:
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+
+The best results were:
+
+details of some of the metrics of the best model:
+
+
+I ran the RunDetails widget to follow the progress
+
+
+The metrics can be shown using get_metrics() 
+
+
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+To compare against AutoML I used the Scikit-learn Logistic Regression as a classification algorithm.
 
+I used the RandomForestClassifier model for this experiment, this adds randomness to the model and searches for the best feature.
+
+The HyperDriveConfig class was configured with the following parameter sampler:
+
+--n_estimators: The number of trees within the forest
+--min_samples: Minimum Number of samples
+--max_features: Number of features to use
+
+With the config set to:
+
+Primary_metric_name as Accuracy and primary_metric_goal was set to maximize.
+
+The Accuracy was calculated on the test set for each run, best model was then retrieved and saved
+
+I chose RandomParameterSampling because it supports early termination of low performance runs which helps to reduce computation time and still allows us to to find reasonably good models, this saves us time and cost for computing resources.
+
+I used BanditPolicy for this reason which is an "aggressive" early stopping policy. With BanditPolicy it defines an early termination policy based on a slack factor and evaluation interval which is specified as 0.1, 2 respectively:
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+Here are the models trained by Automated ML:
 
+
+The best results were:
+
+details of some of the metrics of the best model:
+
+
+I ran the RunDetails widget to follow the progress
+
+
+The metrics can be shown using get_metrics() 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Model Deployment
