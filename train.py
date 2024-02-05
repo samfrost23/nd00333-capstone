@@ -11,15 +11,12 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 from azureml.core import Dataset
 
 
-path = "https://raw.githubusercontent.com/samfrost23/nd00333-capstone/master/starter_file/breast-cancer.csv"
+path = "https://raw.githubusercontent.com/samfrost23/nd00333-capstone/master/breast-cancer-dataset.csv"
 
 def split_data(data_df):
 
     x_df = data_df
-    #x_df.drop(['Unnamed: 32'], inplace=True, axis=1)
     y_df = data_df.pop('diagnosis')
-    #data_df.drop(['diagnosis'], inplace=True, axis=1)
-    # data_df.drop(['Unnamed: NaN'], inplace=True, axis=1)
 
     return x_df, y_df
 
