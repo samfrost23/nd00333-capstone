@@ -119,13 +119,6 @@ Checked the health of the service
 I then created a test using some test data to make sure it is working
 ![automl test](https://github.com/samfrost23/nd00333-capstone/assets/99268262/4727306f-9ef2-4359-8e27-a3823b3fabc9)
 
-I also enabled app insights as this helps for troubleshooting
-![automl app insights](https://github.com/samfrost23/nd00333-capstone/assets/99268262/20d29c08-8741-4846-827f-732f13edb9b2)
-
-![automl app insights2](https://github.com/samfrost23/nd00333-capstone/assets/99268262/1cb47417-77ac-4f13-81a5-c4d66ef85189)
-
-![automl app insights3](https://github.com/samfrost23/nd00333-capstone/assets/99268262/64c0860a-55aa-455b-8e74-86133f34f77e)
-
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
