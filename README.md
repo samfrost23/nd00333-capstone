@@ -51,7 +51,20 @@ The compressed dataset is available to download in Kaggle and i was able to add 
 For the automated ML run, I setup the following:
 
 
-Limiting the experiment to a total duration of 1 hr to reduce the potential for session timeout. The primary metric that I used as an objective for the autoML run was weighted AUC, which is the area under the curve and i is the suggested metric for anomaly detection in the Azure documentation. 
+Limiting the experiment to a total duration of 1 hr to reduce the potential for session timeout. The primary metric that I used as an objective for the autoML run was weighted AUC, which is the area under the curve and it is the suggested metric for anomaly detection in the Azure documentation. 
+
+AutoML Settings:
+experiment_timeout_minutes - This defines how long experement will run in mins
+max_concurrent_iterations - The maximum number of iterations that would be executed in parallel.
+n_cross_validations - Number of cross validations to perform
+primary_metric - The metric that Automated Machine Learning will optimize for model selection
+
+AutoML Config:
+I have set the following for the AUtoML Config
+enable_early_stopping - Early termination if the score is not improving in the short term
+enable_onnx_compatible_models - to enable Onnx-compatitble models
+label_column_name - The column that will be predicted
+
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
