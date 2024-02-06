@@ -195,7 +195,8 @@ Another opportunity could be to enable Deep Learning in classification setting i
 
 ## Screen Recording
 You can find a screen recording in the following link:
-https://drive.google.com/uc?id=1FltuUGtkvsDdXHaJyS8zasfrWlao8vmC&export=download
+
+https://drive.google.com/file/d/1FltuUGtkvsDdXHaJyS8zasfrWlao8vmC/view?usp=sharing
 
 ## Standout Suggestions
 ONNX:
