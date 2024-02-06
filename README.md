@@ -69,7 +69,7 @@ label_column_name - The column that will be predicted
 
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
+
 Here are the models trained by Automated ML:
 
 ![readme automl](https://github.com/samfrost23/nd00333-capstone/assets/99268262/1d7a8e8c-86d1-45af-9c00-3ff5de9a6b39)
@@ -121,7 +121,6 @@ I then created a test using some test data to make sure it is working
 
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 To compare against AutoML I used the Scikit-learn Logistic Regression as a classification algorithm.
 
 I used the RandomForestClassifier model for this experiment, this adds randomness to the model and searches for the best feature.
@@ -153,7 +152,6 @@ I chose RandomParameterSampling because it supports early termination of low per
 I used BanditPolicy for this reason which is an "aggressive" early stopping policy. With BanditPolicy it defines an early termination policy based on a slack factor and evaluation interval which is specified as 0.1, 2 respectively:
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 Here are the models trained by Automated ML:
 
 The best results were:
@@ -196,7 +194,6 @@ I think we could potentially improve on both scores by trying some config adjust
 Another opportunity could be to enable Deep Learning in classification setting in the AutoML experiment.
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 You can find a screen recording in the following link:
 https://drive.google.com/uc?id=1FltuUGtkvsDdXHaJyS8zasfrWlao8vmC&export=download
 
