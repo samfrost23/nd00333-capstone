@@ -7,7 +7,7 @@ The objective is to train a machine learning model using Hyperdrive and AutoML a
 ## Dataset
 
 ### Overview
-I have chosen to use a dataset that i found on kaggle (https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data). THis is a dataset of Breast Cancer Wisconsin (Diagnostic) Dataset. 
+I have chosen to use a dataset that i found on kaggle (https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data). This is a dataset of Breast Cancer Wisconsin (Diagnostic) Dataset. 
 Breast Cancer is the most common found in women. It starts when cells in the breast begin to grow out of control. These cells usually form tumors which can be seen in an X-ray or felt as lumps in the breast area.
 
 About the Dataset:
