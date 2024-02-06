@@ -115,9 +115,13 @@ Checked the health of the service
 
 ![automl check health](https://github.com/samfrost23/nd00333-capstone/assets/99268262/f9cd641e-9987-4ef0-a474-f38fa959a0ef)
 
+With the webservice set, we will also test the endpoint by sending it a post with test data.
 
-I then created a test using some test data to make sure it is working
-![automl test](https://github.com/samfrost23/nd00333-capstone/assets/99268262/4727306f-9ef2-4359-8e27-a3823b3fabc9)
+![enpoint test](https://github.com/samfrost23/nd00333-capstone/assets/99268262/1eb00741-3f80-49f8-829b-57ad6f197753)
+
+Here we use get the key and the scoring url from the service and have two sets of data to test the endpoint for a prediction. When we run the cell it will post to the endpoint and return for each data test, either a B or an M as a predicted diagnosis:
+
+![endpoint test result](https://github.com/samfrost23/nd00333-capstone/assets/99268262/cc1129e4-cc87-4582-ada6-b4d65460fadd)
 
 
 ## Hyperparameter Tuning
