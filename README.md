@@ -156,8 +156,6 @@ I used BanditPolicy for this reason which is an "aggressive" early stopping poli
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 Here are the models trained by Automated ML:
 
-
-
 The best results were:
 
 ![hyperdrive status](https://github.com/samfrost23/nd00333-capstone/assets/99268262/9030c98b-55ec-4756-95c0-e66ce34f1bb0)
@@ -186,20 +184,21 @@ The metrics can be shown using get_metrics()
 
 ![hyperdrivegetbestmodel](https://github.com/samfrost23/nd00333-capstone/assets/99268262/f47808ce-1362-470b-8f28-023fc79ad521)
 
-
 ## Model Deployment
 Below are the endpoints created for both AutoML and Hyperdrive
 
 ![endpoints](https://github.com/samfrost23/nd00333-capstone/assets/99268262/9ecc58ed-42e4-457b-8c55-538fb52693cc)
 
 
-
+## Overall Thoughts
+Overall we can see that actually the AutoML had the better accuracy. It was pretty accurate and time taken wasnt much difference.
+I think we could potentially improve on both scores by trying some config adjustments, such as adjusting the sampling in the hyperdrive config and increasing the Automl experiment length. It would also be interesting to perform some data preprocessing to see if there are some features we may be able to drop, Boruta Feature Selection could be interesting here.
+Another opportunity could be to enable Deep Learning in classification setting in the AutoML experiment.
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+You can find a screen recording in the following link:
+https://drive.google.com/uc?id=1FltuUGtkvsDdXHaJyS8zasfrWlao8vmC&export=download
 
 ## Standout Suggestions
 ONNX:
